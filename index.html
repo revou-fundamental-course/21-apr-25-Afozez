@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <title>Konsuhu - Celcius ke Fahrenheit</title>
+
+    <!-- Eksternal CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <main>
+
+        <!-- ================================== -->
+        <!--               SIDEBAR              -->
+        <!-- ================================== -->
+        <aside class="sidebar">
+            <!-- Nama brand/Logo -->
+            <header class="sidebar-brand">
+                <img src="images/logo.png" alt="">
+                <h1>Kon<span>suhu</span> </h1>
+            </header>
+
+            <!-- Navigasi menu -->
+            <div class="navbar">
+                <span>Konversi</span>
+
+                <nav>
+                    <button id="btn-celsius" onclick="CelsiusToFahrenheit()">
+                    <i class="fa fa-temperature-half"></i>    
+                    Celsius Ke Fahrenheit</button>
+
+                    <button id="btn-fahrenheit" onclick="FahrenehitToCelsius()">
+                    <i class="fa fa-temperature-full"></i>
+                    Fahrenheit Ke Celsius</button>
+                </nav>
+            </div>
+
+            <footer>
+                <p>Copyright &copy; By Alfarozi</p>
+            </footer>
+        </aside>
+
+
+        <!-- ================================== -->
+        <!--        SECTION KONVERSI SUHU       -->
+        <!-- ================================== -->
+        <div class="container">
+            <!-- Section konversi celsius ke fahrenheit -->
+            <section id="conversion-celsius" class="conversion">
+                <h1>Konversi Celsius (°C) Ke Fahrenheit (°F)</h1>
+    
+                <!-- Form unutk menghandle input -->
+                <form id="handle-form-celsius">
+                    <label for="">
+                        Celsius (°C) :
+                        <input type="number" id="input-celcius" placeholder="Celsius"> 
+                        <span class="error-message" id="error-message-celsius"></span>
+                    </label>
+
+                    <!-- Button aksi unutuk form input -->
+                    <div class="role-button">
+                        <button type="submit">Konversi</button>
+                        <button type="reset">Reset</button>
+                    </div>
+                </form>
+
+                <!-- Menampilkan hasil -->
+                <div class="results">
+                    <div style="display: flex; align-items: center;">
+                        Penyelesaian :
+                        <p id="solution-celsius"></p>
+                    </div>
+                    <div>Fahrenheit (°F) = <span id="result-fahrenheit"></span></div>
+                </div>
+    
+                <!-- Formula -->
+                <div class="formula">
+                    <h4>Rumus Konversi Dari Celsius (°C) ke Fahrenheit (°F)</h4>
+
+                    <p>Suhu <i>S</i> dalam derajat Fahrenheit (°F) sama dengan suhu <i>S</i> dalam derajat Celsius (°C) kali 9/5 tambah 32.</p>
+    
+                    <p><i>S</i><sub>(°F)</sub> = (<i>S</i><sub>(°C)</sub> × 9/5) + 32</p>
+    
+                    <p>atau</p>
+    
+                    <p><i>S</i><sub>(°F)</sub> = (<i>S</i><sub>(°C)</sub> × 1.8) + 32</p>
+    
+                </div>
+            </section>
+
+            <!-- Section konversi fahrenheit ke celsius -->
+            <section id="conversion-fahrenheit" class="conversion">
+                <h1>Konversi Fahrenheit (°F) Ke Celsius (°C)</h1>
+            
+                <!-- Form unutk menghandle input -->
+                <form id="handle-form-fahrenheit">
+                    <label for="input-fahrenheit">
+                        Fahrenheit (°F) :
+                        <input type="number" id="input-fahrenheit" placeholder="Fahrenheit">
+                        <span class="error-message" id="error-message-fahrenheit"></span>
+                    </label>
+            
+                    <div class="role-button">
+                        <button type="submit">Konversi</button>
+                        <button type="reset">Reset</button>
+                        <button onclick="reverseFahrenheit()" type="button">Reverse</button>
+                    </div>
+                </form>
+            
+                <!-- Menampilkan hasil -->
+                <div class="results">
+                    <div style="display: flex; align-items: center;">
+                        Penyelesaian :
+                        <p id="solution-fahrenheit"></p>
+                    </div>
+                    <div>Celsius (°C) = <span id="result-celsius"></span></div>
+                </div>
+            
+                <!-- Formula -->
+                <div class="formula">
+                    <h4>Rumus Konversi Dari Fahrenheit (°F) ke Celsius (°C)</h4>
+            
+                    <p>Suhu <i>S</i> dalam derajat Celsius (°C) sama dengan suhu <i>S</i> dalam derajat Fahrenheit (°F) dikurangi 32 lalu dikalikan 5/9.</p>
+            
+                    <p><i>S</i><sub>(°C)</sub> = (<i>S</i><sub>(°F)</sub> - 32) × 5/9</p>
+            
+                    <p>atau</p>
+            
+                    <p><i>S</i><sub>(°C)</sub> = (<i>S</i><sub>(°F)</sub> - 32) × 0.5556</p>
+                </div>
+            </section>
+            
+        </div>
+    </main>
+
+    <script src="js/main.js"></script>
+    <script src="https://kit.fontawesome.com/2f4686a27c.js" crossorigin="anonymous"></script>
+</body>
+</html>
