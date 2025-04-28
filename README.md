@@ -27,7 +27,7 @@ Pengguna cukup memasukkan nilai suhu, klik submit, dan hasil konversi akan langs
 ## Preview
 
 ![image](https://github.com/user-attachments/assets/35f42701-bbe9-42ab-98ff-3486cbdfeab6)
-
+![iPhone-13-PRO-127 0 0 1](https://github.com/user-attachments/assets/1b1b2354-a2d5-440e-b6a7-2b938a66d40c)
 
 ## Lisensi
 
