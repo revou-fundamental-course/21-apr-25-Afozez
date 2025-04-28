@@ -237,3 +237,52 @@ aside {
     background-color: crimson;
     color: white;
 }
+
+/* RESPONSIVE */
+
+@media only screen and (max-width: 786px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        
+    }
+    aside {
+        position: relative;
+        height: fit-content;
+        width: 100%;
+        box-shadow: none;
+        margin-bottom: 20px;
+        padding: 0 10px;
+    }
+
+    .navbar {
+        margin-top: 10px;
+        text-align: center;
+    }
+
+
+    .navbar nav {
+        justify-content: center;
+    }
+
+    .navbar nav button {
+        width: 100%;
+    }
+    
+
+    .sidebar footer {
+        display: none;
+    }
+
+    .container {
+        padding: 0 20px;
+    }
+
+    footer {
+        padding: 50px 0 10px 0;
+        text-align: center;
+        color: gray;
+        font-size: 13px;
+    }
+}
